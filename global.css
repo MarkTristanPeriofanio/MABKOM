@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Press+Start+2P&display=swap');
+
+:root {
+	--font-orbitron: "Orbitron", "Trebuchet MS", sans-serif;
+	--font-press-start: "Press Start 2P", monospace;
+}

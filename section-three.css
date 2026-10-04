@@ -1,0 +1,66 @@
+.page-three { --bg: #07191d; --surface: #0c2428; --surface-raised: #123238; --text: #e9fffb; --muted: #afd0ca; --dim: #789d98; --accent: #62ecd1; --accent-two: #a2ee78; --line: rgba(98, 236, 209, 0.21); --display: var(--font-orbitron); }
+.page-three .topbar { font-family: var(--font-orbitron); }
+.page-three .brand-copy strong, .page-three .brand-copy small, .page-three .nav-link, .page-three .sound-label { font-family: var(--font-orbitron); }
+.page-three .page-hero { min-height: 570px; background-image: linear-gradient(rgba(98, 236, 209, 0.055) 1px, transparent 1px), linear-gradient(90deg, rgba(98, 236, 209, 0.055) 1px, transparent 1px), radial-gradient(ellipse at 78% 46%, rgba(32, 113, 105, 0.3), transparent 43%); background-size: 34px 34px, 34px 34px, auto; }
+.page-three .page-hero h1 { font: 600 clamp(42px, 5.5vw, 70px)/1.12 var(--font-orbitron); }
+.page-three .hero-deck { max-width: 440px; }
+.page-three .signal-graphic { position: relative; justify-self: center; width: min(420px, 42vw); aspect-ratio: 1; border: 1px solid rgba(98, 236, 209, 0.23); border-radius: 50%; background: radial-gradient(circle, rgba(98, 236, 209, 0.09), transparent 64%); }
+.page-three .signal-graphic::before, .page-three .signal-graphic::after { position: absolute; inset: 14%; border: 1px dashed rgba(98, 236, 209, 0.45); border-radius: 50%; content: ""; }
+.page-three .signal-graphic::after { inset: 30%; border-style: solid; border-color: rgba(162, 238, 120, 0.45); }
+.page-three .signal-core { position: absolute; z-index: 1; top: 50%; left: 50%; display: grid; width: 102px; aspect-ratio: 1; place-items: center; border: 1px solid var(--accent-two); border-radius: 50%; color: var(--accent-two); background: var(--bg); font: 600 10px var(--font-orbitron); transform: translate(-50%, -50%); }
+.page-three .signal-node { position: absolute; z-index: 2; padding: 8px 10px; border: 1px solid var(--accent); color: var(--text); background: var(--bg); font: 500 8px var(--font-orbitron); }
+.page-three .node-one { top: 1%; left: 50%; transform: translateX(-50%); }
+.page-three .node-two { top: 27%; right: -7%; }
+.page-three .node-three { right: 2%; bottom: 14%; }
+.page-three .node-four { bottom: 8%; left: 12%; }
+.page-three .node-five { top: 29%; left: -7%; }
+.page-three .hero-meta, .page-three .page-kicker, .page-three .section-kicker { font-family: var(--font-orbitron); }
+.page-three .modes-section { background: #091e22; }
+.page-three .mode-list { border-top: 1px solid var(--line); }
+.page-three .mode-row { display: grid; grid-template-columns: 42px 66px 1fr 145px; gap: 17px; align-items: center; min-height: 115px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.page-three .mode-index { color: var(--accent); font: 500 10px var(--font-orbitron); }
+.page-three .mode-symbol { display: grid; width: 54px; aspect-ratio: 1; place-items: center; border: 1px solid rgba(98, 236, 209, 0.4); color: var(--accent-two); font: 600 23px var(--font-orbitron); }
+.page-three .mode-row h3 { margin: 0 0 7px; font: 600 18px var(--font-orbitron); }
+.page-three .mode-row h3 small { color: var(--dim); font: 400 11px var(--font-orbitron); }
+.page-three .mode-row p { max-width: 720px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.page-three .mode-example { justify-self: end; color: var(--dim); font: 500 8px var(--font-orbitron); }
+.page-three .ethics-section { padding: 92px clamp(24px, 9vw, 140px); background: #061519; }
+.page-three .ethics-heading { display: grid; grid-template-columns: 1fr 0.72fr; gap: 14px 50px; align-items: end; margin-bottom: 35px; }
+.page-three .ethics-heading .section-kicker { grid-column: 1 / -1; }
+.page-three .ethics-heading h2 { font-family: var(--font-orbitron); }
+.page-three .ethics-heading > p:last-child { max-width: 420px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.85; }
+.page-three .ethics-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.page-three .ethics-grid article { min-height: 270px; padding: 23px; border-right: 1px solid var(--line); }
+.page-three .ethics-grid article:first-child { border-left: 1px solid var(--line); }
+.page-three .ethics-symbol { color: var(--accent-two); font: 500 10px var(--font-orbitron); }
+.page-three .ethics-grid h3 { margin: 30px 0 13px; font: 600 17px/1.4 var(--font-orbitron); }
+.page-three .ethics-grid p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.9; }
+.page-three .ethics-check { display: flex; align-items: center; gap: 14px; margin-top: 18px; padding: 16px; border: 1px solid var(--line); }
+.page-three .ethics-check > span { color: var(--accent-two); font-size: 22px; }
+.page-three .ethics-check p { margin: 0; color: var(--text); font-size: 12px; }
+.page-three .ethics-check b { margin-right: 12px; color: var(--accent); font: 500 9px var(--font-orbitron); }
+@media (max-width: 850px) {
+	.page-three .mode-row { grid-template-columns: 34px 56px 1fr; }
+	.page-three .mode-example { grid-column: 3; justify-self: start; }
+	.page-three .ethics-grid { grid-template-columns: 1fr; }
+	.page-three .ethics-grid article { min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); }
+	.page-three .ethics-grid article:first-child { border-left: 1px solid var(--line); }
+	.page-three .ethics-grid article:last-child { border-bottom: 0; }
+}
+@media (max-width: 700px) {
+	.page-three .signal-graphic { position: absolute; right: -10%; bottom: 10px; width: 270px; opacity: 0.72; }
+	.page-three .node-two { right: -10%; }
+	.page-three .node-five { left: -10%; }
+	.page-three .ethics-heading { grid-template-columns: 1fr; gap: 13px; }
+	.page-three .ethics-heading .section-kicker { grid-column: auto; }
+	.page-three .mode-row { grid-template-columns: 27px 45px 1fr; gap: 11px; }
+	.page-three .mode-symbol { width: 42px; font-size: 19px; }
+	.page-three .mode-row h3 { font-size: 15px; }
+	.page-three .mode-row h3 small { display: block; margin-top: 3px; }
+	.page-three .mode-row p { font-size: 11px; }
+	.page-three .mode-example { font-size: 7px; }
+	.page-three .ethics-section { padding: 68px 22px; }
+	.page-three .ethics-check { align-items: flex-start; }
+	.page-three .ethics-check p { line-height: 1.7; }
+	.page-three .ethics-check b { display: block; margin: 0 0 4px; }
+}
